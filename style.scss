@@ -102,11 +102,35 @@ nav {
         letter-spacing: 0.055em;
         color: black;
 
-        z-index: 999;
+        // z-index: 999;
       }
     }
   }
 }
-body{
-    background: #131417;
+body {
+  background: black;
+}
+.main {
+  margin-left: 215px;
+  h1 {
+    margin: 10px;
+    text-decoration: underline;
+    color: white;
+  }
+  .display {
+    display: flex;
+    color: white;
+
+    .card1 {
+      flex: 1;
+      height: 50px;
+      width: 70px;
+    }
+    .card2 {
+      flex: 1;
+    }
+    .card3 {
+      flex: 1;
+    }
+  }
 }
