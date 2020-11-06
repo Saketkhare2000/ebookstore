@@ -74,6 +74,11 @@ nav {
           align-items: center;
 }
 
+.right a {
+  text-decoration: none;
+  color: white;
+}
+
 .right .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,7 +110,7 @@ nav {
           align-items: center;
 }
 
-.container .hero .hero-text {
+.hero-container .hero .hero-text {
   position: absolute;
   width: 469px;
   height: 217px;
@@ -119,7 +124,7 @@ nav {
   color: #ffffff;
 }
 
-.container .hero .cta {
+.hero-container .hero .cta {
   position: absolute;
   width: 171px;
   height: 55px;
@@ -132,7 +137,7 @@ nav {
   border-radius: 10px;
 }
 
-.container .hero .cta .cta-text {
+.hero-container .hero .cta .cta-text {
   position: absolute;
   left: 25px;
   top: 13px;
@@ -148,43 +153,29 @@ nav {
 }
 
 body {
-  background: black;
+  background: #131417;
 }
 
-.main {
-  margin-left: 215px;
-}
-
-.main h1 {
-  margin: 10px;
-  text-decoration: underline;
+.card {
+  margin-top: 30px;
+  background: #202022;
   color: white;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.main .display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
+.card ul li {
+  background: #202022;
 }
 
-.main .display .card1 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 50px;
-  width: 70px;
+.card:hover {
+  -webkit-transform: scale(1.003);
+          transform: scale(1.003);
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.603);
+          box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.603);
 }
 
-.main .display .card2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.main .display .card3 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.img-card {
+  height: 300px !important;
 }
 /*# sourceMappingURL=style.css.map */

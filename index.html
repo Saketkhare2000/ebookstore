@@ -4,16 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>library</title>
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="sticky-top">
       <!-- navbar left side  -->
       <div class="left">
         <img src="./Group 1.png" alt="logo" />
@@ -31,38 +45,163 @@
       <div class="right">
         <div class="search">
           <i class="fas fa-search"></i>
-          <h3>Search</h3>
+          <h5>Search</h5>
         </div>
         <div class="rect"></div>
         <div class="login">
           <i class="fas fa-user"></i>
-          <h3 style="cursor: pointer">LogIn</h3>
-          <h3 style="cursor: pointer">Sign Up</h3>
+          <a href="#"><h5>LogIn</h5></a>
+          <a href="#"><h5>Sign Up</h5></a>
         </div>
       </div>
 
       <!-- right side of navbar  -->
     </nav>
 
-    <div class="container">
+    <div class="hero-container">
       <div class="hero">
-        <img src="./image 1.png" alt="hero-img" width="100%" />
-
-        <h2 class="hero-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </h2>
-        <div class="cta">
-          <p class="cta-text">Shop Now</p>
+        <img
+          src="./image 1.png"
+          alt="hero-img"
+          width="100%"
+          class="img-fluid"
+        />
+        <div class="container">
+          <h2 class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </h2>
+          <div class="cta">
+            <p class="cta-text">Shop Now</p>
+          </div>
         </div>
       </div>
     </div>
-    <section class="main">
-      <h1>New Arrivals</h1>
-      <div class="display">
-        <div class="card1">hello</div>
-        <div class="card2">hello</div>
-        <div class="card3">hello</div>
+    <section class="container">
+      <!-- Card deck -->
+      <div class="card-deck">
+        <!-- Card -->
+        <div class="card mb-4">
+          <!--Card image-->
+          <div class="view overlay">
+            <img
+              class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+              alt="Card image cap"
+            />
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <!--Text-->
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">
+              Read more
+            </button>
+          </div>
+        </div>
+        <!-- Card -->
+
+        <!-- Card -->
+        <div class="card mb-4">
+          <!--Card image-->
+          <div class="view overlay">
+            <img
+              class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
+              alt="Card image cap"
+            />
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <!--Text-->
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">
+              Read more
+            </button>
+          </div>
+        </div>
+        <!-- Card -->
+
+        <!-- Card -->
+        <div class="card mb-4">
+          <!--Card image-->
+          <div class="view overlay">
+            <img
+              class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
+              alt="Card image cap"
+            />
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <!--Text-->
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">
+              Read more
+            </button>
+          </div>
+        </div>
+        <!-- Card -->
       </div>
+      <!-- Card deck -->
     </section>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        var nav = document.querySelector('nav');
+        // var navPoint = document.querySelector("nav");
+        // console.log(navPoint.offsetTop);
+        nav.classList.toggle('shadow-lg', window.scrollY > 0);
+      });
+    </script>
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+    ></script>
   </body>
 </html>
