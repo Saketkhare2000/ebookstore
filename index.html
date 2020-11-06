@@ -4,25 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>library</title>
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
     />
-    <!-- Google Fonts -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-    <!-- Bootstrap core CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Material Design Bootstrap -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
-      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -50,8 +42,8 @@
         <div class="rect"></div>
         <div class="login">
           <i class="fas fa-user"></i>
-          <a href="#"><h5>LogIn</h5></a>
-          <a href="#"><h5>Sign Up</h5></a>
+          <h5 style="cursor: pointer">LogIn</h5>
+          <h5 style="cursor: pointer">Sign Up</h5>
         </div>
       </div>
 
@@ -77,102 +69,69 @@
       </div>
     </div>
     <section class="container">
-      <!-- Card deck -->
-      <div class="card-deck">
-        <!-- Card -->
-        <div class="card mb-4">
-          <!--Card image-->
-          <div class="view overlay">
+      <div class="row ">
+        <div class="col-lg-4">
+          <div class="card">
             <img
-              class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
-              alt="Card image cap"
+              src="https://images.unsplash.com/photo-1510172951991-856a654063f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+              class="card-img-top img-fluid"
+              alt="..."
             />
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">Card title</h4>
-            <!--Text-->
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-light-blue btn-md">
-              Read more
-            </button>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
           </div>
         </div>
-        <!-- Card -->
-
-        <!-- Card -->
-        <div class="card mb-4">
-          <!--Card image-->
-          <div class="view overlay">
-            <img
-              class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
-              alt="Card image cap"
-            />
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">Card title</h4>
-            <!--Text-->
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-light-blue btn-md">
-              Read more
-            </button>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="./image 1.png" class="card-img-top img-fluid" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
           </div>
         </div>
-        <!-- Card -->
-
-        <!-- Card -->
-        <div class="card mb-4">
-          <!--Card image-->
-          <div class="view overlay">
-            <img
-              class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
-              alt="Card image cap"
-            />
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-
-          <!--Card content-->
-          <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">Card title</h4>
-            <!--Text-->
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-light-blue btn-md">
-              Read more
-            </button>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="./image 1.png" class="card-img-top img-fluid" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
           </div>
         </div>
-        <!-- Card -->
       </div>
-      <!-- Card deck -->
     </section>
 
     <script>
@@ -183,25 +142,15 @@
         nav.classList.toggle('shadow-lg', window.scrollY > 0);
       });
     </script>
-    <!-- JQuery -->
     <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
     ></script>
-    <!-- Bootstrap tooltips -->
     <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
-    ></script>
-    <!-- Bootstrap core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
-    ></script>
-    <!-- MDB core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
     ></script>
   </body>
 </html>
