@@ -144,7 +144,7 @@ body {
 .content .content-overlay {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -157,4 +157,76 @@ body {
 .content:hover .content-overlay {
   opacity: 1;
   cursor: pointer;
+}
+.overlay-text:hover::after {
+  content: 'Show More >>';
+  z-index: 99;
+  transition: 0.5s ease all;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translate(35%, 50%);
+  pointer-events: none;
+}
+.overlay-text-1:hover::after {
+  content: 'Browse Diaries >>';
+  z-index: 99;
+  transition: 0.5s ease all;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translate(33%, 50%);
+  pointer-events: none;
+}
+.overlay-text-2:hover::after {
+  content: 'Top-offers >>';
+  z-index: 99;
+  transition: 0.5s ease all;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translate(35%, 50%);
+  pointer-events: none;
+}
+.overlay-text-3:hover::after {
+  content: 'International Best-sellers >>';
+  z-index: 99;
+  transition: 0.5s ease all;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translate(20%, 50%);
+  pointer-events: none;
+}
+.overlay-text-4:hover::after {
+  content: 'JEE Exam Books >>';
+  z-index: 99;
+  transition: 0.5s ease all;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translate(30%, 50%);
+  pointer-events: none;
+}
+.overlay-text-5:hover::after {
+  content: 'UPSC CSE Exam >>';
+  z-index: 99;
+  transition: 0.5s ease all;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translate(30%, 50%);
+  pointer-events: none;
 }
