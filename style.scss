@@ -67,6 +67,17 @@ nav {
     align-items: center;
   }
 }
+// .jumbotron {
+//   background-image: url(./image_1.png);
+//   background-size: cover;
+//   height: 100%;
+// }
+.btn-jumbotron {
+  background-color: #ffd231;
+  &:hover {
+    background-color: #e0b828;
+  }
+}
 .hero-container {
   .hero {
     .hero-text {
@@ -229,4 +240,10 @@ body {
   height: 100%;
   transform: translate(30%, 50%);
   pointer-events: none;
+}
+.jumbotron {
+  background: url(./image_1.png) center;
+  background-size: cover;
+  color: white;
+  // height: 40vh !important;
 }

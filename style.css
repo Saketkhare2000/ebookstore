@@ -110,6 +110,14 @@ nav {
           align-items: center;
 }
 
+.btn-jumbotron {
+  background-color: #ffd231;
+}
+
+.btn-jumbotron:hover {
+  background-color: #e0b828;
+}
+
 .hero-container .hero .hero-text {
   position: absolute;
   width: 469px;
@@ -294,5 +302,11 @@ body {
   -webkit-transform: translate(30%, 50%);
           transform: translate(30%, 50%);
   pointer-events: none;
+}
+
+.jumbotron {
+  background: url(./image_1.png) center;
+  background-size: cover;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
